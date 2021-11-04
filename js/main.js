@@ -1,4 +1,25 @@
+function validar(e) {
+  e.preventDefault();
+  let mail = document.getElementById("mail");
+
+  console.log("Nuevo suscriptor al newslater" + mail.value);
+}
+
+function mouse(e) {
+  console.log(e.button);
+  if (e.button == 0) {
+    console.log("CLICK IZQUIERDO");
+  } else if (e.button == 1) {
+    console.log("ClICK MEDIO");
+  } else {
+    console.log("CLICK DERECHO");
+  }
+}
+/*
+
+// NO SE QUE VOY A HACER CON ESTO TODAVIA POR ESO LO COMENTE Y NO LO BORRE
 class Producto {
+
   constructor(precio, nombre, stock) {
     this.precio = precio;
     this.nombre = nombre;
@@ -118,3 +139,5 @@ function agregarProducto(producto) {
 }
 
 main();
+
+*/
