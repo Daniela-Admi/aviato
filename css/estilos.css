@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+  font-family: "Roboto", sans-serif;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark {
+  background: #111111;
+}
+
+a {
+  color: #343d5b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+body.dark h3, body.dark
+h4 {
+  color: #fefefe;
+}
+
+.contenedor {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+nav {
+  background: #fefefe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 20px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+          box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+}
+
+body.dark nav a {
+  color: #c8c8c8;
+}
+
+body.dark nav a:hover {
+  color: #fefefe;
+}
+
+nav .logotipo {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+nav .enlaces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .enlaces a {
+  margin-right: 40px;
+}
+
+nav .enlaces a:hover {
+  color: #acabab;
+}
+
+.btn {
+  width: 50%;
+  padding: 8px;
+  background-color: black;
+  outline: none;
+  border: solid 2px black;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.sidebar {
+  display: none;
+  text-align: center;
+  height: 100vh;
+  width: 400px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #5a5a5a;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.sidebar a {
+  text-align: center;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: #343d5b;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#openbtn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+}
+
+#openbtn i.fa-shopping-bag {
+  font-size: 30px;
+  color: #343d5b;
+}
+
+#lblCartCount {
+  position: absolute;
+  font-size: 13px;
+  background: #acabab;
+  color: #c8c8c8;
+  padding: 0 5px;
+  top: 17px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.switch {
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+  background: orange;
+  color: black;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 40px 20px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 40px 0;
+}
+
+.grid .card {
+  max-width: 300px;
+  font-size: 1rem;
+  padding: 12px;
+  margin: 3px;
+}
+
+.grid img {
+  max-height: 280px;
+}
+
+#newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #c8c8c8;
+  gap: 1rem;
+}
+
+#arriba {
+  color: #343d5b;
+  font-size: 3rem;
+}
+
+.footerMenu {
+  width: auto;
+}
+
+.footerMenu .nav-link {
+  color: #111111;
+}
+
+.footerMenu a:hover {
+  color: #acabab;
+}
+
+.btnColeccion {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 15px;
+  padding-top: 13px;
+  border: solid 3px #343d5b;
+}
+
+.sobreImg {
+  display: inline-block;
+  gap: 1rem;
+  margin: 1rem;
+}
+/*# sourceMappingURL=estilos.css.map */
